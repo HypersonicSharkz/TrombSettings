@@ -6,6 +6,12 @@ Allows modders to show BepInEx config entries ingame
 Example from the Highscore Accuracy mod    
 
 ```cs
+        public enum AccType
+        {
+            BaseGame,
+            Real
+        }
+
         internal static ConfigEntry<AccType> accType;
         internal static ConfigEntry<bool> showLetterRank;
         internal static ConfigEntry<int> decimals;
@@ -29,6 +35,7 @@ Example from the Highscore Accuracy mod
             // Adds the config entries
             // Ordered from first to last added entry
             settings.Add(showLetterRank);
+            // Enums are shown as dropdowns
             settings.Add(accType);
             
             // For number values use the StepSliderConfig class
