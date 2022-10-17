@@ -5,7 +5,7 @@ Allows modders to show BepInEx config entries ingame
 # For Modders
 Example from the Highscore Accuracy mod    
 
-```
+```cs
         internal static ConfigEntry<AccType> accType;
         internal static ConfigEntry<bool> showLetterRank;
         internal static ConfigEntry<int> decimals;
