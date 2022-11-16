@@ -307,7 +307,7 @@ namespace TrombSettings
 
         void GetSliderPrefab()
         {
-            GameObject slider = SettingsPanel.transform.Find("AUDIO/SET_sld_volume").gameObject;
+            GameObject slider = SettingsPanel.transform.Find("AUDIO/master_volume/SET_sld_volume").gameObject;
             GameObject _s = UnityEngine.Object.Instantiate(slider);
 
             RectTransform rect = _s.GetComponent<RectTransform>();

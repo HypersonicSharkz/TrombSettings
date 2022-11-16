@@ -11,7 +11,7 @@ using UnityEngine;
 namespace TrombSettings
 {
     [HarmonyPatch]
-    [BepInPlugin("com.hypersonicsharkz.trombsettings", "TrombSettings", "1.0.0")]
+    [BepInPlugin("com.hypersonicsharkz.trombsettings", "TrombSettings", "1.0.1")]
     public class TrombConfig : BaseUnityPlugin
     {
         public static TrombSettings TrombSettings = new TrombSettings();
